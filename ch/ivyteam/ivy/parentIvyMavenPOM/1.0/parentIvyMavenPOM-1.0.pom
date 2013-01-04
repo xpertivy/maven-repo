@@ -64,10 +64,35 @@
             </extension>
         </extensions>
     </build>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Maven Plugin Repository</name>
+            <url>http://repo1.maven.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+        <pluginRepository>
+            <id>git-repo</id>
+            <url>https://raw.github.com/xpertivy/maven-repo/master</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
     <repositories>
         <repository>
             <id>git-repo</id>
-            <url>https://raw.github.com/xpertivy/maven-repo/</url>
+            <url>https://raw.github.com/xpertivy/maven-repo/master</url>
             <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
