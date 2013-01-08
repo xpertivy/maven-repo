@@ -21,8 +21,8 @@
             <type>iar</type>
         </dependency>
     </dependencies>
-    
-     <repositories>
+    <!--
+    <repositories>
         <repository>
             <id>git-repo</id>
             <url>https://raw.github.com/xpertivy/maven-repo/master</url>
@@ -35,4 +35,5 @@
             </snapshots>
         </repository>
     </repositories>
+	-->
 </project>
