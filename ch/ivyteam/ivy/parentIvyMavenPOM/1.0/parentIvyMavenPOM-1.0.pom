@@ -9,7 +9,7 @@
     <url>http://www.soreco.ch</url>   
     <properties>
         <ivy-server-path>D:/ivy/server/4.3.8</ivy-server-path>
-        <skip-svn-in-export>true</skip-svn-in-export>
+        <skip-svn-in-export>false</skip-svn-in-export>
     </properties> 
     <build>
         <outputDirectory>${basedir}/classes</outputDirectory>
@@ -89,19 +89,7 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-    <repositories>
-        <repository>
-            <id>git-repo</id>
-            <url>https://raw.github.com/xpertivy/maven-repo/master</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+    
     <distributionManagement>
         <repository>
             <id>git-repo</id>
@@ -112,28 +100,4 @@
             <url>file:///${user.home}/Documents/GitHub/maven-repo</url>
         </snapshotRepository>
     </distributionManagement>
-    <!--
-    <distributionManagement>
-        <repository>
-            <id>git-repo</id>
-            <url>https://raw.github.com/ultimatemanu/xpert/</url>
-        </repository>
-        <snapshotRepository>
-            <id>git-repo</id>
-            <url>https://raw.github.com/ultimatemanu/xpert/</url>
-        </snapshotRepository>
-    </distributionManagement>
-     <repository>
-            <id>xpertlinerepo</id>
-            <name>Xpertline Maven 2 Repository</name>
-            <url>ftp://ftp.soreco.ch/dev/Xpertline/M2Repo/</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    -->
 </project>
