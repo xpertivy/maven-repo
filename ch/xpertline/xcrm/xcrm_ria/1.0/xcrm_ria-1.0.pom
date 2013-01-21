@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+        <groupId>ch.ivyteam.ivy</groupId>
+        <artifactId>parentIvyMavenPOM</artifactId>
+        <version>1.0</version>
+    </parent>
+	
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ch.xpertline.xcrm</groupId>
+	<artifactId>xcrm_ria</artifactId>
+	<packaging>iar</packaging>
+	<version>1.0</version>
+	<name>Xpert.Line CRM</name>
+	<url>http://www.soreco.ch</url>
+	<dependencies>
+        <dependency>
+            <groupId>ch.xpertline.resources</groupId>
+            <artifactId>SharedResources</artifactId>
+            <version>1.0</version>
+            <type>iar</type>
+        </dependency>
+		<dependency>
+            <groupId>ch.ivyteam.ivy</groupId>
+            <artifactId>ivyaddons</artifactId>
+            <version>1.04.02.00</version>
+            <type>iar</type>
+        </dependency>
+    </dependencies>
+</project>
